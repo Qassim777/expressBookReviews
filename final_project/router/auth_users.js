@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 let books = require("./booksdb.js");
 const regd_users = express.Router();
 const secretKey = "mySecretKey"; // better to keep in .env
-let users = [{ name: "1", pass: "1"},{ name: "2", pass: "1"}];
+let users = [];
 
 const isValid = (username)=>{ //returns boolean
   //write code to check is the username is valid
